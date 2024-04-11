@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
     const getTodayDate = () => {
@@ -64,6 +65,9 @@ function HomePage() {
           <p className="text-gray-200">{apodData.explanation}</p>
         </div>
       )}
+      <Link to="/gallery" className="block mt-4 text-blue-500 hover:text-blue-700">
+        Go to Gallery
+      </Link>
     </div>
   );
 }
